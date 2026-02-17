@@ -11,14 +11,13 @@ window.addEventListener("scroll", () => {
       const width = bar.getAttribute("data-width");
       bar.style.width = width;
     });
-    skillsAnimated = true; // ensures animation happens only once
+    skillsAnimated = true;
   }
 });
 
 const toggleBtn = document.querySelector(".toggle-btn");
 const icon = toggleBtn.querySelector("i");
 
-// Load saved theme on page load
 window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
 
@@ -29,7 +28,6 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Toggle theme
 toggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 
